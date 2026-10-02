@@ -1,4 +1,3 @@
-// Task 4: posts with optional image
 const posts = [
   { id: 1, title: "First post", content: "Content of post 1", image: "post1.jpg" },
   { id: 2, title: "Second post", content: "Content of post 2", image: "" },

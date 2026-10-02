@@ -1,4 +1,3 @@
-// Task 2: count users and admins
 const users = [
   { name: "Ahmed", email: "ahmed@mail.com", type: "admin" },
   { name: "Sara", email: "sara@mail.com", type: "user" },

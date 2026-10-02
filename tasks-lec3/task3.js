@@ -1,4 +1,3 @@
-// Task 3: show products rated above 3, with stars
 const products = [
   { name: "Laptop", price: 900, rating: 4.5 },
   { name: "Mouse", price: 20, rating: 2.5 },
@@ -12,7 +11,6 @@ for (let i = 0; i < products.length; i++) {
   const product = products[i];
 
   if (product.rating > 3) {
-    // Build the stars string: one star per full rating point
     let stars = "";
     for (let j = 1; j <= Math.floor(product.rating); j++) {
       stars += "⭐";

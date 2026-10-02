@@ -1,4 +1,3 @@
-// Task 5: factorial with input validation
 const input = prompt("أدخل رقماً:");
 const num = Number(input);
 

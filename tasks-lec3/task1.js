@@ -1,4 +1,3 @@
-// Task 1: object + ternary operator
 const name = prompt("أدخل اسمك:");
 const age = Number(prompt("أدخل عمرك:"));
 
