@@ -14,13 +14,17 @@ const users = [
 let usersCount = 0;
 let adminsCount = 0;
 
-for (let i = 0; i < users.length; i++) {
-  if (users[i].type === "admin") {
+users.forEach(function(user){
+  if (user.type === "admin") {
     adminsCount++;
   } else {
     usersCount++;
   }
-}
+})
+
+// for (let i = 0; i < users.length; i++) {
+
+// }
 
 console.log("Users:", usersCount);
 console.log("Admins:", adminsCount);

@@ -7,16 +7,15 @@ const products = [
   { name: "Webcam", price: 80, rating: 4.2 },
 ];
 
-for (let i = 0; i < products.length; i++) {
-  const product = products[i];
-
-  if (product.rating > 3) {
+products.forEach(function (product){
+  
+    if (product.rating > 3) {
     let stars = "";
-    for (let j = 1; j <= Math.floor(product.rating); j++) {
+    for (let i = 1; i <= Math.floor(product.rating); i++) {
       stars += "⭐";
     }
-
-    document.write(`<p>${product.name} - $${product.price} - ${stars}</p>`);
     console.log(product.name, stars);
   }
-}
+  
+})
+

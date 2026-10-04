@@ -6,15 +6,10 @@ const posts = [
   { id: 5, title: "Fifth post", content: "Content of post 5", image: "post5.jpg" },
 ];
 
-for (let i = 0; i < posts.length; i++) {
-  const post = posts[i];
-  const image = post.image ? post.image : "default image";
+posts.forEach(function (post){
+const image = post.image ? post.image : "default image";
 
-  document.write(`
-    <div>
-      <h3>${post.id} - ${post.title}</h3>
-      <p>${post.content}</p>
-      <p>Image: ${image}</p>
-    </div>
-  `);
-}
+  console.log(post.id + ' ' + post.title +  ' '  + post.content + ' ' + image);
+  
+})
+
